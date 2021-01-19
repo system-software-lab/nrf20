@@ -1,0 +1,4 @@
+/home/pi/build11/CMakeFiles/rebuild_cache.dir
+/home/pi/build11/CMakeFiles/edit_cache.dir
+/home/pi/build11/CMakeFiles/mnist.dir
+/home/pi/build11/CMakeFiles/ie_samples.dir

@@ -1,0 +1,21 @@
+/opt/intel
+: ctags
+
+/opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+: mnist
+
+/opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/object_detection_sample_ssd
+: object detection -> input blob!
+
+/opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/hello_classification
+: hello classification -> output blob! 
+
+/home/pi/build3
+: mnist build
+
+/opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/common/format_reader
+: format reader
+
+526  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  527  cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+533  cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist

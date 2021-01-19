@@ -1,0 +1,3 @@
+ 462  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  463  make -j2 mnist
+  464  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte

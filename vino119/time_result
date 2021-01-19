@@ -1,0 +1,35 @@
+pi@raspberrypi:~/build9 $ ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+read data: 2.31144e+06
+prepare i/o blobs: 77
+prepare network: 2.22643e+06
+prepare input-1/(inputholder): 163
+prepare input-1/(imagedata -> data): 20
+infer: 5025
+process_output: 349
+prepare input-1/(imagedata -> data): 22
+infer: 4475
+process_output: 112
+prepare input-1/(imagedata -> data): 17
+infer: 4591
+process_output: 117
+prepare input-1/(imagedata -> data): 43
+infer: 10277
+process_output: 164
+prepare input-1/(imagedata -> data): 43
+infer: 3961
+process_output: 109
+prepare input-1/(imagedata -> data): 45
+infer: 7005
+process_output: 169
+prepare input-1/(imagedata -> data): 41
+infer: 3980
+process_output: 140
+prepare input-1/(imagedata -> data): 44
+infer: 3873
+process_output: 110
+prepare input-1/(imagedata -> data): 19
+infer: 3820
+process_output: 112
+prepare input-1/(imagedata -> data): 41
+infer: 3728
+process_output: 105

@@ -20,6 +20,13 @@ main888.cpp -> main77.cpp
 
 main888.cpp -> main7.cpp
 
--Precision inputPrecision = Precision::U8;
--openvino input: FP16, FP32
+- Precision inputPrecision = Precision::U8;
+- openvino input: FP16, FP32
 
+main7.cpp -> main6.cpp
+
+- time 
+
+main6.cpp -> main.cpp
+
+-energy

@@ -29,4 +29,4 @@ main7.cpp -> main6.cpp
 
 main6.cpp -> main.cpp
 
--energy
+- energy

@@ -6,7 +6,7 @@ main9.cpp -> main88.cpp
 
 main88.cpp -> main8.cpp
 
--process result
+- process output
 
 main8.cpp -> main888.cpp
 

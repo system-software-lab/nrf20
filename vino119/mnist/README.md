@@ -9,7 +9,13 @@ main88.cpp -> main8.cpp
 main8.cpp -> main888.cpp
 
 - check accuracy
-![](https://github.com/pinguin-der-bellt/ssl-2020/blob/main/mnist/openvino/model_result2.jpg?raw=true)
+- normalize O, quantize X
+
+normalized test data | Test
+---------------------|------
+O|87.92
+X|87.17
+
 
 main888.cpp -> main77.cpp
 

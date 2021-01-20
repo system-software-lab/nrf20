@@ -1,5 +1,3 @@
-main999.cpp = main9.cpp
-
 main9.cpp -> main88.cpp
 
 - read label

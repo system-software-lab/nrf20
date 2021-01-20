@@ -11,10 +11,10 @@ main8.cpp -> main888.cpp
 - check accuracy
 - normalize O, quantize X
 
-normalized test data | Test
+normalized test data | accuracy
 ---------------------|------
-O|87.92
-X|87.17
+O|87.92%
+X|87.17%
 
 
 main888.cpp -> main77.cpp

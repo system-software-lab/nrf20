@@ -23,7 +23,8 @@ main888.cpp -> main7.cpp
 
 main7.cpp -> main6.cpp
 
-- time 
+- time
+- [time_result](https://github.com/system-software-lab/nrf20/blob/main/vino119/time_result)
 
 main6.cpp -> main.cpp
 

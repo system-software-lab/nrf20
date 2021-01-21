@@ -1,4 +1,5 @@
 - bird_quant2.json/ bird_quant_edgetpu2.json
+
 	tensorflow 모델 layer를  summary 함수로 보는 것과 비슷하게
 	tflite 파일을 schema.fbs로 json 파일로 바꾸면 볼 수 있음
 	

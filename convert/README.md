@@ -1,7 +1,8 @@
 - bird_quant2.json/ bird_quant_edgetpu2.json
 
-	tensorflow 모델 layer를  summary 함수로 보는 것과 비슷하게
+	tensorflow 모델 layer를  summary 함수로 보는 것(summary_quant.py)과 비슷하게
 	tflite 모델도 flatc를 이용하여 json 파일로 바꾸면 볼 수 있음(Linux)
+	(변환 과정에서 schmea.fbs 파일 사용)
 	
 	`
 	flatc -t schema.fbs -- model_name.tflite
@@ -41,6 +42,19 @@
 	NCS2 | saved_model.xml, saved_model.bin
 
 	각 모델 수행 정확도 측정 결과 
+
+- openvino_model_convert.PNG
+
+	mo_tf 실행 결과
+
+- openvino예제.txt
+
+	tensorflow slim 모델을 사용할 경우 tflite로 변환할 수 없는 이유
+	non-frozen model
+
+
+	
+	
 
 
 

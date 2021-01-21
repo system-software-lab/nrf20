@@ -1,0 +1,23 @@
+Converting a TensorFlow Model
+
+ - Converting TF-Slim Image Classification Model Library Models(1~4 변환 과정)
+
+1. Download the TensorFlow*-Slim models git repository. -> 훈련 안 된 껍데기(가중치 없음) 
+2. Download the pre-trained model checkpoint. -> 체크포인트 
+
+껍데기랑 체크포인트를 합쳐서 openvino 모델로 만듦.
+
+-> tf-slim 이 non-frozen 이 지원되는 모델이라서 다른 모델이랑 변환 방법이 다름.
+(savedmodel -> freeze / non-frozen -> 훈련 안 된 껍데기로 변환 진행)
+
+-> 훈련 안 된 껍데기(.pb)로는 변환을 할 수 있으나 훈련을 다시 해야됨.
+
+-> 체크포인트 파일을 savedmodel(.pb)로 변환을 하려면 (.meta) 파일이 있어야 하는데 없음.
+(tensorflow convert에 사용할 수 있는 모델이 savedmodel밖에 없어서) 
+
+3. Export the inference graph.
+4. Convert the model using the Model Optimizer.
+
+<Example of an Inception V1 Model Conversion>
+
+

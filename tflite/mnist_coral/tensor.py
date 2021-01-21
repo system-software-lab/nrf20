@@ -31,11 +31,4 @@ def get_output(interpreter):
             max=i+1;
     return max;
        
-  #  return scores
-    '''
-    classes=[
-            Class(scores)
-            ]
-    return sorted(classes,key=operator.itemgetter(0), reverse=True)
-    '''
 

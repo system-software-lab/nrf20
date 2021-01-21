@@ -1,3 +1,8 @@
+- convert.py
+
+	tensorflow 모델을 tflite 모델로 변환함.
+	DEFAULT option -> quantize weight activate
+
 - bird_quant2.json/ bird_quant_edgetpu2.json
 
 	tensorflow 모델 layer를  summary 함수로 보는 것(summary_quant.py)과 비슷하게

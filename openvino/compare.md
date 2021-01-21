@@ -66,8 +66,7 @@ Blob::Ptr imageInput=infer_request.GetBlob(imageInputName);
 for (size_t pid = 0; pid < image_size; pid++) 
 	    {
                     data[pid] = imagedata[num].get()[pid];
-		   
-            }
+ }
 
 infer_request.Infer();
 

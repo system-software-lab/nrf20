@@ -69,9 +69,10 @@ for (size_t pid = 0; pid < image_size; pid++)
  }
 
 infer_request.Infer();
-
+```
 const Blob::Ptr output_blob=infer_request.GetBlob(output_name);
 		moutput=as<MemoryBlob>(output_blob);
 		if(!moutput){printf("cast output to memory blob failed\n");}
 		auto moutputHolder=moutput->rmap();
 		detection=moutputHolder.as<const PrecisionTrait<Precision::FP16>::value_type*>();
+```

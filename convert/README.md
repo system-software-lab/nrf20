@@ -22,4 +22,26 @@
 	saved_X_quant_model로 변환한 openvino IR 모델
 	사용 가능.
 
+- edge_tpu_model.PNG
+
+	mnist3.tflite 모델은 converter option을 안 줘서 weight가 활성화 되지 않아서 edgetpu compiler가 quantize가 안 됐다고 판단.
+	mnist4.tflite 모델 option주고 바꿔서 edgetpu comile 가능
+	결과: mnist4.tflite -> mnist4_edgetpu.tflite
+
+- mnist4_edgetpu.log
+
+ 	edgetpu compiler 수행 결과 
+	compile 후 TPU에서 수행 가능한 layer 나열/ 이외에는 CPU에서 실행.
+
+- model_result4.jpg
+
+	tensorflow| saved_model.pb
+	------------|------------------- 
+	coral |  mnist4.tflite, mnist4_edgetpu.tflite
+	NCS2 | saved_model.xml, saved_model.bin
+
+	각 모델 수행 정확도 측정 결과 
+
+
+
 	

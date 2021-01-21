@@ -44,3 +44,6 @@ EdgeTpuManagerDirect::EnumerateEdgeTpuInternal() const {
   return result;
 }
 ```
+
+![](https://github.com/system-software-lab/nrf20/blob/main/device/devboard.JPG?raw=true)
+![](https://github.com/system-software-lab/nrf20/blob/main/device/usbaccelerator.JPG?raw=true)

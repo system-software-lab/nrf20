@@ -15,5 +15,10 @@
 
 	coral python에서 mnist data 읽어오기 
 
+- Tensorflow_data.md
+
+        Deprecated 버전은 numpy로 주렁주렁 읽어오는데
+        새 버전은 왜 download and prepare 덩그러니
+
 
 

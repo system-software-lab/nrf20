@@ -47,3 +47,6 @@ EdgeTpuManagerDirect::EnumerateEdgeTpuInternal() const {
 
 ![](https://github.com/system-software-lab/nrf20/blob/main/device/devboard.JPG?raw=true)
 ![](https://github.com/system-software-lab/nrf20/blob/main/device/usbaccelerator.JPG?raw=true)
+
+![](https://github.com/system-software-lab/nrf20/blob/main/device/nvidia%20gpu%20codename.JPG?raw=true)
+https://nouveau.freedesktop.org/CodeNames.html

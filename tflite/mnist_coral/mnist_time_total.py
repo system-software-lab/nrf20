@@ -44,6 +44,7 @@ def _extract_label(f):
         return labels
 
 def main():
+    start_time = time.time()
     #data
     test_images="t10k-images-idx3-ubyte"
     f=open(test_images,'rb')
@@ -79,7 +80,6 @@ def main():
         classe.append(classes[0])
     '''
     ccc=0;
-    start_time = time.time()
     for i in range(10000):
         tensor.set_input(interpreter,data[i])
         interpreter.invoke()
@@ -87,22 +87,19 @@ def main():
         #print(classes)
         if classes!=labels[i]:
             ccc=ccc+1;
-    total_time = time.time() - start_time
-    #    print("total time:", total_time)
 #    print("ccc:");
 #    print(ccc)
-    print("total_time: ");
-    print(total_time);
 
 
     f.close()
     f2.close()
     #print(classe)
+    total_time = time.time() - start_time
+    print("total_time: ");
+    print(total_time);
+
 
 if __name__ == '__main__':
     for i in range(10):
         main()
-        start_sleep = time.time()
         time.sleep(10)
-        sleep_time = time.time() - start_sleep
-        print("sleep_time:", sleep_time, "\n")

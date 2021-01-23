@@ -31,6 +31,6 @@
   time(μs)
   [time_result](https://github.com/system-software-lab/nrf20/blob/main/vino119/time_result)
  
-- main6.cpp -> main.cpp
+- main6.cpp -> main5.cpp
 
   energy

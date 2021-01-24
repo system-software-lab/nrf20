@@ -50,3 +50,6 @@ EdgeTpuManagerDirect::EnumerateEdgeTpuInternal() const {
 
 ![](https://github.com/system-software-lab/nrf20/blob/main/device/nvidia%20gpu%20codename.JPG?raw=true)
 https://nouveau.freedesktop.org/CodeNames.html
+
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/common_runtime/gpu/gpu_device.cc
+![](https://github.com/pinguin-der-bellt/ssl-2020/blob/main/device/jetson_gpu2.JPG?raw=true)

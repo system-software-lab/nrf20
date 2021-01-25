@@ -3,6 +3,7 @@
 import numpy
 import tensorflow as tf
 from tensorflow.python.compiler.tensorrt import trt_convert as trt
+from tensorflow.python.saved_model import signature_constants
 import sys
 
 def _read32(bytestream):

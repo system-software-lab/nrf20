@@ -3,7 +3,6 @@ import tflite_runtime.interpreter as tflite
 import platform
 import sys
 import tensor
-import time
 
 EDGETPU_SHARED_LIB = {
   'Linux': 'libedgetpu.so.1',
@@ -43,66 +42,53 @@ def _extract_label(f):
         labels=numpy.frombuffer(buf,dtype=numpy.uint8)
         return labels
 
-def main():
-    #data
-    test_images="t10k-images-idx3-ubyte"
-    f=open(test_images,'rb')
-    data=_extract_image(f)
 
-    test_labels="t10k-labels-idx1-ubyte"
-    f2=open(test_labels,'rb')
-    labels=_extract_label(f2)
+#data
+test_images="t10k-images-idx3-ubyte"
+f=open(test_images,'rb')
+data=_extract_image(f)
 
-    #normalize
-    '''
-    data=numpy.float32(data)
-    data=data/255.0
-    '''
-    #?
-    labels=numpy.int32(labels)
+test_labels="t10k-labels-idx1-ubyte"
+f2=open(test_labels,'rb')
+labels=_extract_label(f2)
 
-    #model
-    model=sys.argv[1]
-    #print(model)
+#normalize
+'''
+data=numpy.float32(data)
+data=data/255.0
+'''
+#?
+labels=numpy.int32(labels)
 
-    interpreter=make_interpreter(model)
-    interpreter.allocate_tensors()
+#model
+model=sys.argv[1]
+#print(model)
 
-    size=tensor.input_size(interpreter)
-    #print(size)
-    classe=[]
-    '''
-    for x in data:
-        tensor.set_input(interpreter,x)
-        interpreter.invoke()
-        classes=tensor.get_output(interpreter)
-        classe.append(classes[0])
-    '''
-    ccc=0;
-    start_time = time.time()
-    for i in range(10000):
-        tensor.set_input(interpreter,data[i])
-        interpreter.invoke()
-        classes=tensor.get_output(interpreter)
-        #print(classes)
-        if classes!=labels[i]:
-            ccc=ccc+1;
-    total_time = time.time() - start_time
-    #    print("total time:", total_time)
-#    print("ccc:");
-#    print(ccc)
-    print("total_time: ");
-    print(total_time);
+interpreter=make_interpreter(model)
+interpreter.allocate_tensors()
+
+size=tensor.input_size(interpreter)
+#print(size)
+classe=[]
+'''
+for x in data:
+    tensor.set_input(interpreter,x)
+    interpreter.invoke()
+    classes=tensor.get_output(interpreter)
+    classe.append(classes[0])
+'''
+ccc=0;
+for i in range(10000):
+    tensor.set_input(interpreter,data[i])
+    interpreter.invoke()
+    classes=tensor.get_output(interpreter)
+    #print(classes)
+    if classes!=labels[i]:
+        ccc=ccc+1;
+print("ccc:");
+print(ccc)
 
 
-    f.close()
-    f2.close()
-    #print(classe)
-
-if __name__ == '__main__':
-    for i in range(10):
-        main()
-        start_sleep = time.time()
-        time.sleep(10)
-        sleep_time = time.time() - start_sleep
-        print("sleep_time:", sleep_time, "\n")
+f.close()
+f2.close()
+#print(classe)

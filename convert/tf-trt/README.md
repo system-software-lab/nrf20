@@ -4,3 +4,6 @@ https://github.com/tensorflow/tensorrt/blob/master/tftrt/examples/object_detecti
 from tensorflow.python.framework import convert_to_constants
 
 https://github.com/tensorflow/tensorrt/blob/master/tftrt/examples/image-classification/image_classification.py
+
+data2=tf.convert_to_tensor(value=tf.compat.v1.get_variable(
+      "data", initializer=tf.constant(data)))

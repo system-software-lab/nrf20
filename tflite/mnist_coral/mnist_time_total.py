@@ -100,6 +100,7 @@ def main():
 
 
 if __name__ == '__main__':
+    time.sleep(10)
     for i in range(10):
         main()
         time.sleep(10)

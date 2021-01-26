@@ -7,3 +7,6 @@ https://github.com/tensorflow/tensorrt/blob/master/tftrt/examples/image-classifi
 
 data2=tf.convert_to_tensor(value=tf.compat.v1.get_variable(
       "data", initializer=tf.constant(data)))
+
+#model.save(export_path, include_optimizer=True)
+  model.save("mnist_model.h5")

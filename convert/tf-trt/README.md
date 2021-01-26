@@ -14,4 +14,5 @@ data2=tf.convert_to_tensor(value=tf.compat.v1.get_variable(
   python .\mnist_main2.py --model_dir=$MODEL_DIR --data_dir=$DATA_DIR --train_epochs=10 --distribution_strategy=one_device --download
 
 https://developer.nvidia.com/embedded/downloads/archive
+
 https://developer.nvidia.com/jetpack-43-archive

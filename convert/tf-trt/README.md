@@ -10,3 +10,6 @@ data2=tf.convert_to_tensor(value=tf.compat.v1.get_variable(
 
 #model.save(export_path, include_optimizer=True)
   model.save("mnist_model.h5")
+  
+  python .\mnist_main2.py --model_dir=$MODEL_DIR --data_dir=$DATA_DIR --train_epochs=10 --distribution_strategy=one_device --download
+

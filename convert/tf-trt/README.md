@@ -16,3 +16,5 @@ data2=tf.convert_to_tensor(value=tf.compat.v1.get_variable(
 https://developer.nvidia.com/embedded/downloads/archive
 
 https://developer.nvidia.com/jetpack-43-archive
+
+https://developer.download.nvidia.com/compute/redist/jp/v43/tensorflow-gpu/

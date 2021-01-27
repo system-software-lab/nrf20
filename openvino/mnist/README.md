@@ -28,9 +28,13 @@
 
 - main7.cpp -> main6.cpp
 
-  time(μs)
+  time(μs): split in little pieces(network, input, inference, output etcs)
   [time_result](https://github.com/system-software-lab/nrf20/blob/main/vino119/time_result)
  
 - main6.cpp -> main5.cpp
 
   energy
+  
+- main5.cpp -> main4.cpp
+
+  energy, time(μs): total time

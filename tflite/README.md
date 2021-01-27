@@ -27,4 +27,6 @@ python3 examples/classify_image.py \
 
 python3 mnist.py mnist4_edgetpu.tflite
 
+## jetson nano + tensorflow lite
 
+https://qengineering.eu/install-tensorflow-2-lite-on-jetson-nano.html

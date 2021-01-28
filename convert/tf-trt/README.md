@@ -18,3 +18,5 @@ https://developer.nvidia.com/embedded/downloads/archive
 https://developer.nvidia.com/jetpack-43-archive
 
 https://developer.download.nvidia.com/compute/redist/jp/v43/tensorflow-gpu/
+
+https://forums.developer.nvidia.com/t/error-in-tftrt/128200/4

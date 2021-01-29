@@ -1,0 +1,640 @@
+    1  cd /etc/wpa_supplicant/
+    2  ls
+    3  vi wpa_supplicant.conf 
+    4  sudo vi wpa_supplicant.conf 
+    5  sudo /etc/init.d/networking restart
+    6  ifconfig
+    7  exit
+    8  sudo raspi-config
+    9  iwconfig
+   10  sudo iwlist wlan0 scan
+   11  iwconfig
+   12  sudo iwlist wlan0 scan
+   13  sudo
+   14  su
+   15  su pi
+   16  exit
+   17  ls
+   18  cd /etc/wpa_supplicant/
+   19  ls
+   20  vi wpa_supplicant.conf 
+   21  sudo vi wpa_supplicant.conf 
+   22  exit
+   23  iwconfig
+   24  sudo iwlist wlan0 scan
+   25  sudo raspi-config
+   26  vi /etc/wpa_supplicant/wpa_supplicant.conf 
+   27  sudo vi /etc/wpa_supplicant/wpa_supplicant.conf 
+   28  iwconfig
+   29  sudo vi /etc/wpa_supplicant/wpa_supplicant.conf 
+   30  iwconfig
+   31  sudo iwlist wlan1 scan
+   32  cd /etc/wpa_supplicant/
+   33  ls
+   34  sudo wpa_passphrase SSLAB emblab14 >>a.txt
+   35  cd ~
+   36  ls
+   37  wpa_passphrase SSLAB emblab14 >>a.txt
+   38  ls
+   39  sudo mv a.txt /etc/wpa_supplicant/
+   40  cd /etc/wpa_supplicant/
+   41  ls
+   42  sudo vi wpa_supplicant 
+   43  sudo vi wpa_supplicant.conf 
+   44  sudo vi wpa_supplicant.conf a.txt
+   45  sudo /etc/init.d/networking restart
+   46  ifconfig
+   47  sudo /etc/init.d/networking restart
+   48  ifconfig
+   49  exit
+   50  iwconfig
+   51  sudo iwlist wlan1 scan
+   52  sudo vi /etc/wpa_supplicant/wpa_supplicant.conf 
+   53  sudo /etc/init.d/networking restart
+   54  iwconfig
+   55  ifconfig
+   56  vi /etc/wpa_supplicant/wpa_supplicant.conf 
+   57  exit
+   58  mkdir --help
+   59  mkdir -p ~/.vim/colors
+   60  sudo apt-get install vim
+   61  mv jellybeans.vim ~/.vim/colors
+   62  vi a.txt
+   63  ls
+   64  vi a.c
+   65  ls
+   66  rm a.c
+   67  ls
+   68  history
+   69  iwconfig
+   70  exit
+   71  echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+   72  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+   73  sudo apt-get update
+   74  wget https://github.com/google-coral/pycoral/releases/download/release-frogfish/pycoral-1.0.0-cp37-cp37m-linux_armv7l.whl
+   75  ls
+   76  pip3 --version
+   77  pip3 install pycoral-1.0.0-cp37-cp37m-linux_armv7l.whl
+   78  wget https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+   79  ls
+   80  pip3 install tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl 
+   81  ls
+   82  mkdir coral
+   83  cd coral
+   84  ls
+   85  git --version
+   86  git clone https://github.com/google-coral/tflite.git
+   87  ls
+   88  cd tflite/
+   89  ls
+   90  cd python/
+   91  ls
+   92  cd examples/classification/
+   93  ls
+   94  vi install_requirements.sh 
+   95  ls
+   96  vi classify_image.py 
+   97  vi classify.py
+   98  exit
+   99  python3 --version
+  100  exit
+  101  bash install_requirements.sh 
+  102  sudo apt-get install python3-edgetpu
+  103  python3
+  104  cd Downloads/
+  105  ls
+  106  echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+  107  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  108  sudo apt-get update
+  109  pip3 install --extra-index-url https://google-coral.github.io/py-repo/ tflite_runtime
+  110  pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+  111  python3
+  112  wget https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+  113  pip3 install tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl 
+  114  history | grep python3
+  115  ls
+  116  cp mnist_time_total.py+mnist4_edgetpu.tflite\(datasheet\).txt
+  117  cp mnist_time_total.py+mnist4_edgetpu.tflite\(datasheet\).txt mnist_time_total.py+mnist4_edgetpu.tflite\(time\).txt
+  118  python --version
+  119  python3 --version
+  120  python
+  121  python3 mnist.py mnist4_edgetpu.tflite 
+  122  dpkg -l | grep edgetpu
+  123  sudo apt-get install libedgetpu1-sd
+  124  sudo apt-get install libedgetpu1-std
+  125  python3 mnist.py mnist4_edgetpu.tflite 
+  126  grep libedgetpu
+  127  dpkg -l | grep libedgetpu
+  128  python3 mnist.py mnist4_edgetpu.tflite 
+  129  sudo apt-get install python3-pycoral
+  130  python3 mnist.py mnist4_edgetpu.tflite 
+  131  python3 mnist_time_total.py mnist4_edgetpu.tflite 
+  132  sudo vi mnist_time_total.py 
+  133  python3 mnist_time_total.py mnist4_edgetpu.tflite 
+  134  cd /opt
+  135  ls
+  136  sudo find / -name 'install_NCS'
+  137  sudo find / -name 'install_NCS*'
+  138  uname -m
+  139  cd ~/Downloads/
+  140  wget https://storage.openvinotoolkit.org/repositories/openvino/packages/2021.2/l_openvino_toolkit_runtime_raspbian_p_2021.2.185.tgz
+  141  sudo mkdir -p /opt/intel/openvino
+  142  sudo tar -xf  l_openvino_toolkit_runtime_raspbian_p_2021.2.185.tgz --strip 1 -C /opt/intel/openvino
+  143  sudo apt install cmake
+  144  source /opt/intel/openvino/bin/setupvars.sh 
+  145  echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc
+  146  sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh
+  147  sudo mv -f mnist /opt/intel/openvino/inference_engine/samples/cpp/
+  148  sudo cp -f /opt/intel/openvino/inference_engine/samples/cpp/mnist/ ./
+  149  sudo cp -r /opt/intel/openvino/inference_engine/samples/cpp/mnist/ ./
+  150  sudo rm -r /opt/intel/
+  151  cd Downloads/
+  152  wget https://storage.openvinotoolkit.org/repositories/openvino/packages/2020.4/l_openvino_toolkit_runtime_raspbian_p_2020.4.287.tgz
+  153  ls
+  154  rm l_openvino_toolkit_runtime_raspbian_p_2021.2.185.tgz 
+  155  sudo mkdir -p /opt/intel/openvino
+  156  sudo tar -xf  l_openvino_toolkit_runtime_raspbian_p_2020.4.287.tgz --strip 1 -C /opt/intel/openvino
+  157  sudo apt install cmake
+  158  source /opt/intel/openvino/bin/setupvars.sh 
+  159  sudo usermod -a -G users "$(whoami)"
+  160  source /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh 
+  161  rm -r mnist/
+  162  sudo rm -r mnist/
+  163  cp -R mnist /opt/intel/openvino/inference_engine/samples/cpp/
+  164  sudo cp -R mnist /opt/intel/openvino/inference_engine/samples/cpp/
+  165  sudo cp -f mnist /opt/intel/openvino/inference_engine/samples/cpp/
+  166  sudo cp -vr mnist /opt/intel/openvino/inference_engine/samples/cpp/
+  167  ls
+  168  ls mnist/
+  169  cd mnist/
+  170  ls
+  171  sudo usermode -a -G users "$(whoami)"
+  172  sudo usermod -a -G users "$(whoami)"
+  173  sh /opt/intel/openvino/install_dependencies/install_NCS_udev_rules.sh 
+  174  mkdir build && cd build
+  175  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp
+  176  make -j2 object_detection_sample_ssd
+  177  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  178  sudo apt-get install font-nanum
+  179  sudo apt-get install fonts-nanum
+  180  sudo apt-get install ibus-hangul
+  181  ibus-setup
+  182  sudo apt-get install uim uim-byeoru
+  183  ibus-setup
+  184  sudo rm main.cpp 
+  185  sudo cp main4.cpp main.cpp
+  186  sudo rm main.cpp 
+  187  sudo cp main4.cpp main.cpp
+  188  cp main5.cpp main.cpp
+  189  sudo cp main5.cpp main.cpp
+  190  sudo rm main.cpp 
+  191  sudo cp main6.cpp main.cpp
+  192  sudo cp main6.cpp main4.pp
+  193  sudo rm main4.pp 
+  194  sudo cp main6.cpp main4.cpp
+  195  sudo vi main4.cpp
+  196  sudo vi mnist_time_total.py 
+  197  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  198  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" ~/mnist
+  199  make -j2 mnist
+  200  cd ..
+  201  sudo mv -r ~/mnist /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  202  sudo mv -f ~/mnist /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  203  cd /opt/intel/openvino/deployment_tools/inference_engine/
+  204  cd samples/cpp/
+  205  ls
+  206  cd mnist/
+  207  ls
+  208  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  209  cd ~/pi
+  210  cd ~/
+  211  ls
+  212  cd build/
+  213  ls
+  214  cd ..
+  215  mkdir build2 && cd build2
+  216  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  217  ls
+  218  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  219  ls
+  220  make -j2 mnist
+  221  sudo apt-get install libgflags-dev
+  222  make -j2 mnist
+  223  ls
+  224  ls armv7l/
+  225  cd armv7l/Release/
+  226  ls
+  227  cd ..
+  228  wget https://github.com/system-software-lab/nrf20/blob/main/openvino/t10k-labels-idx1-ubyte
+  229  ls
+  230  wget https://github.com/system-software-lab/nrf20/blob/main/openvino/t10k-images-idx3-ubyte
+  231  wget https://github.com/system-software-lab/nrf20/blob/main/openvino/saved_model.xml
+  232  wget https://github.com/system-software-lab/nrf20/blob/main/openvino/saved_model.bin
+  233  ls
+  234  cd armv7l/Release/
+  235  cd ..
+  236  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  237  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  238  ./armv7l/Release/mnist saved_model.bin t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  239  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  240  wget https://github.com/system-software-lab/nrf20/blob/main/openvino/t10k-labels-idx1-ubyte
+  241  ls
+  242  rm t10k-labels-idx1-ubyte.1
+  243  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist
+  244  make -j2 mnist
+  245  cd armv7l/Release/
+  246  cd ..
+  247  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  248  openvino --version
+  249  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  250  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  251  make -j2 mnist
+  252  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  253  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  254  make -j2 mnist
+  255  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  256  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  257  make -j2 mnist
+  258  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  259  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  260  make -j2 mnist
+  261  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  262  make -j2 mnist
+  263  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
+  264  sudo rm main.c
+  265  sudo vi 1.txt
+  266  sudo vi 2.txt
+  267  sudo vi 3.txt
+  268  sudo vi 4.txt
+  269  sudo rm main.cpp 
+  270  sudo cp main4.cpp main.cpp
+  271  sudo rm main.cpp 
+  272  sudo cp main4.cpp main.cpp
+  273  sudo rm main.cpp 
+  274  sudo cp main4.cpp main.cpp
+  275  sudo rm main.cpp 
+  276  sudo cp main4.cpp main.cpp
+  277  sudo rm main.cpp 
+  278  sudo cp main4.cpp main.cpp
+  279  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  280  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  281  make -j2 mnist
+  282  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  283  make -j2 mnist
+  284  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  285  make -j2 mnist
+  286  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  287  make -j2 mnist
+  288  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-march=armv7-a" /opt/intel/openvino/deployment_tools/inference_engine/samples/cpp/mnist/
+  289  make -j2 mnist
+  290  ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte 
+  291  sudo vi main.cpp 
+  292  sudo vi main4.cpp 
+  293  rm .main4.cpp.swp 
+  294  sudo rm .main4.cpp.swp 
+  295  sudo vi main4.cpp 
+  296  sudo cp main4.cpp /opt/intel/openvino/inference_engine/samples/cpp/mnist/
+  297  ls -l
+  298  sudo mv main4.cpp /media/pi/28AF-A922/mnist/
+  299  ls
+  300  git clone https://github.com/movidius/ncappzoo.git
+  301  s
+  302  ls
+  303  cd ncappzoo/
+  304  ls
+  305  cd networks
+  306  ls
+  307  cd mnist
+  308  ls
+  309  make model
+  310  make run
+  311  ls
+  312  cd ..
+  313  ls
+  314  cd ..
+  315  ls
+  316  make run
+  317  vi Makefile 
+  318  make all
+  319  ls
+  320  cd networks/
+  321  ls
+  322  cd mnist/
+  323  ls
+  324  make run
+  325  ls
+  326  vi Makefile 
+  327  python mnist.py 
+  328  python3 mnist.py 
+  329  make all
+  330  vi Makefile 
+  331  make run_py
+  332  make compile_model
+  333  echo $INTEL_OPENVINO_DIR
+  334  vi ~/.bashrc
+  335  mo.py
+  336  ls /opt/intel/openvino
+  337  ls /opt/intel/openvino/python/
+  338  ls /opt/intel/openvino/bin
+  339  cat /opt/intel/openvino/bin/setupvars.sh 
+  340  pushd .
+  341  cd /opt/intel
+  342  ls
+  343  cd openvino/
+  344  ls
+  345  grep mo.py */*
+  346  cd bin
+  347  grep mo.py
+  348  grep mo.py *
+  349  cd ..
+  350  ls
+  351  find . -name 'mo.py' -print
+  352  cd deployment_tools/
+  353  ls
+  354  cd ..
+  355  ls
+  356  popd
+  357  ls
+  358  cd /opt/intel/openvino/
+  359  ls
+  360  cd deployment_tools/
+  361  ls
+  362  cd
+  363  ls
+  364  cd ncappzoo/
+  365  ls
+  366  cd networks/
+  367  ls
+  368  cd mnist/
+  369  ls
+  370  vi Makefile 
+  371  make help
+  372  make deps
+  373  make train
+  374  ls
+  375  make help
+  376  make data
+  377  make deps
+  378  make help
+  379  make all
+  380  ls
+  381  grep mo.py *
+  382  cd
+  383  git clone https://github.com/opencv/dldt.git
+  384  cd dldt/model-optimizer/
+  385  pip3 install -r requirements_tf.txt 
+  386  python --version
+  387  python3 --version
+  388  sudo apt update
+  389  sudo apt upgrade
+  390  python3 --versin
+  391  python3 --version
+  392  cd
+  393  wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.gz
+  394  wget https://www.python.org/ftp/python/3.8.7/Python-3.8.7.tar.xz
+  395  tar xf Python-3.8.7.tar.xz 
+  396  cd Python-3.8.7/
+  397  ls
+  398  ls /usr/local
+  399  whereis python3
+  400  mkdir /usr/local/opt/python-3.8.7
+  401  mkdir /usr/local/opt
+  402  sudo mkdir -R /user/local/opt/python-3.8.7
+  403  sudo mkdir /usr/local/opt
+  404  sudo mkdir /usr/local/opt/python-3.8.7
+  405  ./configure --prefix=/usr/local/opt/python-3.8.7
+  406  make -j 4
+  407  sudo make altinstall
+  408  cd ..
+  409  . ~/.bashrc
+  410  sudo update-alternatives --config python3
+  411  sudo update-alternatives --config python
+  412  python3 -V
+  413  python -V
+  414  echo $PATH
+  415  ls /usr/local/bin
+  416  ls /usr/local/opt/python-3.8.7/bin
+  417  ls /usr/bin
+  418  whereis python
+  419  sudo update-alternatives --config python
+  420  whereis python3
+  421  cd Python-3.8.7/
+  422  ls
+  423  ./python -V
+  424  make install
+  425  sudo make install
+  426  cd ..
+  427  ls /usr/local/bin
+  428  ls /usr/local/opt/bin
+  429  ls /usr/local/opt/python-3.8.7/
+  430  ls /usr/local/opt/python-3.8.7/bin
+  431  ls -l /usr/bin/py*
+  432  cd Python-3.8.7/
+  433  ls
+  434  vi Makefile
+  435  vi ~/.bashrc
+  436  python
+  437  ls
+  438  cd ..
+  439  ls
+  440  /usr/local/opt/python-3.8.7/bin/python3
+  441  ls
+  442  cd /usr/local/opt
+  443  cd python-3.8.7/
+  444  ls
+  445  cd ..
+  446  ls
+  447  cd ..
+  448  ls
+  449  cd
+  450  ls
+  451  vi .bashrc
+  452  ls /usr/local/opt/python-3.8.7/
+  453  source .bashrc
+  454  python
+  455  python3.8
+  456  python3 -V
+  457  ls
+  458  cd dldt
+  459  ls
+  460  cd model-optimizer/
+  461  pip3 install -r requirements_tf.txt 
+  462  alias python=python3
+  463  pip3 install -r requirements_tf.txt 
+  464  python
+  465  ls
+  466  python -V
+  467  pip3 install -r requirements_tf.txt 
+  468  vi requirements_tf.txt 
+  469  pip3 install -r requirements_caffe.txt 
+  470  ls
+  471  export PATH=~/dldt/model-optimizer:$PATH
+  472  export PYTHONPATH=~/dldt/model-optimizer:$PYTHONPATH
+  473  cd 
+  474  cd ncappzoo/
+  475  cd networks/
+  476  cd mnist/
+  477  ls
+  478  make all
+  479  unalias python
+  480  make all
+  481  pip3 install numpy
+  482  make all
+  483  cd 
+  484  cd dldt
+  485  cd model-optimizer/
+  486  ls
+  487  pip3 install -r requirements_tf2.txt 
+  488  pip3 install -r requirements_tf.txt 
+  489  python3
+  490  cd
+  491  cd ncappzoo/networks/mnist/
+  492  make all
+  493  cd ..
+  494  cd 
+  495  cd dldt/
+  496  ls
+  497  cd moe
+  498  cd model-optimizer/
+  499  ls
+  500  cd mo/
+  501  ls
+  502  cd ..
+  503  ls
+  504  mo.py
+  505  vi mo.py
+  506  python3 mo.py
+  507  python mo.py
+  508  cd
+  509  ls
+  510  cd Python-3.8.7/
+  511  ls
+  512  vi install-sh 
+  513  ls /usr
+  514  ./configure 
+  515  sudo make install
+  516  ls /usr/bin
+  517  python -V
+  518  python3 -V
+  519  ls /usr/local/bin
+  520  cd
+  521  vi .bashrc
+  522  echo $PATH
+  523  ls
+  524  vi .bashrc
+  525  exit
+  526  ls
+  527  sudo apt install cmake
+  528  cd dldt/
+  529  cd inference-engine/
+  530  git submodule init
+  531  git submodule update --recursive
+  532  ls
+  533  cd bin
+  534  ls
+  535  cd scripts/
+  536  ls
+  537  ./run_tests_myriad_multistick.sh 
+  538  cd ..
+  539  ls
+  540  cd tools/
+  541  ls
+  542  cd vpu
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd tools/
+  547  ls
+  548  cd vpu/
+  549  ls
+  550  cd vpu_perfcheck/
+  551  ls
+  552  cd ..
+  553  ls
+  554  ls cmake/
+  555  mkdir build
+  556  cd build
+  557  cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_MKL_NDD=OFF -DENABLE_CLDNN=OFF -DENABLE_GNA=OFF -DENABLE_SSE42=OFF -DTHREADING=SEQ
+  558  ls
+  559  cd ~/dldt/inference-engine
+  560  mkdir build && cd build
+  561  cmake -DCMAKE_BUILD_TYPE=Release     -DENABLE_MKL_DNN=OFF     -DENABLE_CLDNN=OFF     -DENABLE_GNA=OFF     -DENABLE_SSE42=OFF     -DTHREADING=SEQ     ..
+  562  ls
+  563  cmake
+  564  ls
+  565  ls CMakeLists.txt 
+  566  cat CMakeLists.txt 
+  567  ls
+  568  cmake CMakeLists.txt 
+  569  cmake -DCMAKE_BUILD_TYPE=Release     -DENABLE_MKL_DNN=OFF     -DENABLE_CLDNN=OFF     -DENABLE_GNA=OFF     -DENABLE_SSE42=OFF     -DTHREADING=SEQ     CMa
+  570  cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_MKL_NDD=OFF -DENABLE_CLDNN=OFF -DENABLE_GNA=OFF -DENABLE_SSE42=OFF -DTHREADING=SEQ CMakeLists.txt
+  571  cmake -V
+  572  cmake --version
+  573  ls
+  574  cd tests
+  575  ls
+  576  cd ..
+  577  ls
+  578  cd tools/
+  579  ls
+  580  cd benchmark_tool/
+  581  ls
+  582  ./benchmark_app.py 
+  583  cd
+  584  ls
+  585  lsblk
+  586  lsusb
+  587  exit
+  588  git clone https://github.com/HsinM/OpenVINO-NCS
+  589  ls
+  590  cd OpenVINO-NCS/
+  591  ls
+  592  cd pi_code/
+  593  ls
+  594  cd mnist/
+  595  ls
+  596  cd code/
+  597  ls
+  598  python3 static_digit_detection.py 
+  599  ls
+  600  vi static_digit_detection.py 
+  601  cd ..
+  602  ls
+  603  cd model/
+  604  ls
+  605  cd ..
+  606  cd data/
+  607  ls
+  608  cd ..
+  609  ls
+  610  cd
+  611  ls
+  612  cd my_try_NCS2/
+  613  ls
+  614  vi run_on_ncs2.py 
+  615  python3 run_on_ncs2.py 
+  616  vi run_on_ncs2.py 
+  617  python3 run_on_ncs2.py 
+  618  vi run_on_ncs2.py 
+  619  python3 run_on_ncs2.py 
+  620  cd
+  621  ls
+  622  cd OpenVINO-NCS/
+  623  ls
+  624  cd pi_code/
+  625  ls
+  626  cd mnist/
+  627  ls
+  628  cd code/
+  629  ls
+  630  python3 static_digit_detection.py 
+  631  exit
+  632  python3 --version
+  633  pip list
+  634  pip3 list
+  635  ls
+  636  cd OpenVINO-NCS/
+  637  ls
+  638  cd RE
+  639  vi README.md 
+  640  history >command.txt

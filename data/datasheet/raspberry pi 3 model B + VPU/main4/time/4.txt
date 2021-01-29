@@ -1,0 +1,11 @@
+total time : 3.11253e+06
+total time : 3.30727e+06
+total time : 3.27722e+06
+total time : 3.27872e+06
+total time : 3.28528e+06
+total time : 3.2903e+06
+total time : 3.2829e+06
+total time : 3.29266e+06
+total time : 3.29114e+06
+total time : 3.29106e+06
+

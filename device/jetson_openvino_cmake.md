@@ -1,3 +1,4 @@
+```
 -- Inference Engine enabled features: 
 -- 
 --     CI_BUILD_NUMBER: custom_master_4b64c64c625d5d278b0e438cef4698776dae5b7c
@@ -31,7 +32,9 @@
 --     ENABLE_ERROR_HIGHLIGHT = OFF
 --     ENABLE_GNA = OFF
 --     ENABLE_CLDNN_TESTS = OFF
---     THREADING = TBB
+```
+###     THREADING = TBB
+```
 --     ENABLE_VPU = ON
 --     ENABLE_MYRIAD = ON
 --     ENABLE_MYRIAD_NO_BOOT = OFF
@@ -50,3 +53,4 @@
 --     ENABLE_TBB_RELEASE_ONLY = ON
 --     USE_SYSTEM_PUGIXML = OFF
 -- 
+```

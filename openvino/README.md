@@ -33,3 +33,6 @@ make -j2 mnist
 ./armv7l/Release/mnist saved_model.xml t10k-images-idx3-ubyte t10k-labels-idx1-ubyte
 `
 
+`
+sudo apt-get install libgflags-dev
+`

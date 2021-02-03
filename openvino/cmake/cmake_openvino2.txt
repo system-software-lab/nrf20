@@ -260,3 +260,9 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty")
     list(REMOVE_ITEM samples_dirs common thirdparty)
 endif()
 add_samples_to_build(${samples_dirs})
+
+ie_add_sample(NAME mnist
+	SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp")
+	#	DEPENDENCIES format_reader)
+	#find_package(ngraph REQUIRED)
+	#target_link_libraries(mnist PRIVATE ${NGRAPH_LIBRARIES})

@@ -1,0 +1,7 @@
+2021-02-05 20:21:56.177748: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.182021: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.185708: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.189990: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.193734: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.197359: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0
+2021-02-05 20:21:56.202281: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[1,28,28,1]] failed. Running native segment for TRTEngineOp_0_0

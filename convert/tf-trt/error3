@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "convert4.py", line 70, in <module>
+    converter.build(input_fn=my_input_fn)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/compiler/tensorrt/trt_convert.py", line 1174, in build
+    func(*map(ops.convert_to_tensor, inp))
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1655, in __call__
+    return self._call_impl(args, kwargs)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/wrap_function.py", line 247, in _call_impl
+    args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1673, in _call_impl
+    return self._call_with_flat_signature(args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1695, in _call_with_flat_signature
+    len(args)))
+TypeError: pruned(input_1) takes 1 positional arguments but 28 were given
+
+(28,28,1)

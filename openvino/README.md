@@ -36,3 +36,7 @@ make -j2 mnist
 `
 sudo apt-get install libgflags-dev
 `
+
+`
+cannot init NCS2 -> usb-devices .. movidius 
+`

@@ -26,5 +26,5 @@ RESHAPE                        1          Mapped to Edge TPU
 CONV_2D                        2          Mapped to Edge TPU
 MAX_POOL_2D                    2          Mapped to Edge TPU
 
-???
+
 ```

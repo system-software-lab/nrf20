@@ -1,4 +1,12 @@
 Hi
+
+model                     | H/W
+--------------------------|----------------------
+**mnist7.tflite**         | fully integer CPU
+**mnist7_edgetpu.tflite** | fully integer TPU
+**mnist8.tflite**         | FP16 CPU
+
+
 ```
 Edge TPU Compiler version 15.0.340273435
 Input: mnist4.tflite

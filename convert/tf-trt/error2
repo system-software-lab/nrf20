@@ -1,0 +1,32 @@
+2021-02-05 16:21:07.260529: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:588] Running native segment forTRTEngineOp_0_0 due to failure in verifying input shapes: Input shapes do not match input partial shapes stored in graph, for TRTEngineOp_0_0: [[28,28,1]] != [[?,28,28,1]]
+2021-02-05 16:21:07.298025: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-02-05 16:21:08.927315: W tensorflow/core/framework/op_kernel.cc:1767] OP_REQUIRES failed at transpose_op.cc:157 : Invalid argument: transpose expects a vector of size 3. But input(1) is a vector of size 4
+2021-02-05 16:21:08.927560: W tensorflow/core/framework/op_kernel.cc:1767] OP_REQUIRES failed at trt_engine_op.cc:401 : Invalid argument: transpose expects a vector of size 3. But input(1) is a vector of size 4
+	 [[{{node StatefulPartitionedCall/mnist/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer}}]]
+Traceback (most recent call last):
+  File "convert4.py", line 70, in <module>
+    converter.build(input_fn=my_input_fn)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/compiler/tensorrt/trt_convert.py", line 1174, in build
+    func(*map(ops.convert_to_tensor, inp))
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1655, in __call__
+    return self._call_impl(args, kwargs)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/wrap_function.py", line 247, in _call_impl
+    args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1673, in _call_impl
+    return self._call_with_flat_signature(args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1722, in _call_with_flat_signature
+    return self._call_flat(args, self.captured_inputs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1924, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 550, in call
+    ctx=ctx)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError:  transpose expects a vector of size 3. But input(1) is a vector of size 4
+	 [[{{node StatefulPartitionedCall/mnist/conv2d/Conv2D-0-TransposeNHWCToNCHW-LayoutOptimizer}}]]
+	 [[TRTEngineOp_0_0]] [Op:__inference_pruned_920]
+
+Function call stack:
+pruned
+
+(1,28,28,1)

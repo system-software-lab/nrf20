@@ -1,0 +1,183 @@
+john@john-desktop:~/mnist$ python3 deploy_trt2.py
+2021-02-03 20:06:32.012245: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-02-03 20:06:44.923236: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-02-03 20:06:44.968193: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:06:44.968483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.86GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-02-03 20:06:44.968600: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-02-03 20:06:45.149087: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-02-03 20:06:45.228971: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-03 20:06:45.347900: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-03 20:06:45.497070: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-03 20:06:45.579468: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-02-03 20:06:45.584451: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-03 20:06:45.584820: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:06:45.585232: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:06:45.585437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+Found the following GPUs:
+ PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
+2021-02-03 20:07:33.958560: W tensorflow/core/platform/profile_utils/cpu_utils.cc:108] Failed to find bogomips or clock in /proc/cpuinfo; cannot determine CPU frequency
+2021-02-03 20:07:33.960925: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17e0b260 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-02-03 20:07:33.961232: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-02-03 20:07:34.102246: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:34.102654: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17df67e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-02-03 20:07:34.102770: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA Tegra X1, Compute Capability 5.3
+2021-02-03 20:07:34.103368: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:34.103539: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.86GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-02-03 20:07:34.103703: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-02-03 20:07:34.103830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-02-03 20:07:34.103904: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-03 20:07:34.103969: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-03 20:07:34.104034: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-03 20:07:34.104101: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-02-03 20:07:34.104175: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-03 20:07:34.104528: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:34.104769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:34.104860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-02-03 20:07:34.104993: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-02-03 20:07:40.864224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1283] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-03 20:07:40.864404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1289]      0 
+2021-02-03 20:07:40.864464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1302] 0:   N 
+2021-02-03 20:07:40.865097: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:40.865525: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:07:40.865750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1428] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 305 MB memory) -> physical GPU (device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3)
+2021-02-03 20:09:25.813756: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.813958: I tensorflow/core/grappler/devices.cc:69] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 0
+2021-02-03 20:09:25.814291: I tensorflow/core/grappler/clusters/single_machine.cc:356] Starting new session
+2021-02-03 20:09:25.816416: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.816576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.86GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-02-03 20:09:25.816763: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-02-03 20:09:25.816920: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-02-03 20:09:25.817046: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-03 20:09:25.817109: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-03 20:09:25.817195: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-03 20:09:25.817262: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-02-03 20:09:25.817342: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-03 20:09:25.817573: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.817867: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.817968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-02-03 20:09:25.818071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1283] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-03 20:09:25.818130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1289]      0 
+2021-02-03 20:09:25.818213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1302] 0:   N 
+2021-02-03 20:09:25.818542: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.818886: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-02-03 20:09:25.819047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1428] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 305 MB memory) -> physical GPU (device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3)
+2021-02-03 20:09:31.170187: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:842] Optimization results for grappler item: graph_to_optimize
+2021-02-03 20:09:31.170320: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:844]   function_optimizer: Graph size after: 7 nodes (4), 6 edges (4), time = 84.717ms.
+2021-02-03 20:09:31.170367: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:844]   function_optimizer: Graph size after: 7 nodes (0), 6 edges (0), time = 76.053ms.
+2021-02-03 20:09:31.170436: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:842] Optimization results for grappler item: __inference_TRTEngineOp_0_0_native_segment_75
+2021-02-03 20:09:31.170485: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:844]   function_optimizer: function_optimizer did nothing. time = 0.008ms.
+2021-02-03 20:09:31.170533: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:844]   function_optimizer: function_optimizer did nothing. time = 0.003ms.
+2021-02-03 20:12:18.369045: I tensorflow/compiler/tf2tensorrt/convert/convert_nodes.cc:1205] Linked TensorRT version: 7.1.3
+2021-02-03 20:12:18.861911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libnvinfer.so.7
+2021-02-03 20:12:18.862938: I tensorflow/compiler/tf2tensorrt/convert/convert_nodes.cc:1206] Loaded TensorRT version: 7.1.3
+2021-02-03 20:12:18.913659: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libnvinfer_plugin.so.7
+2021-02-03 20:12:30.553834: W tensorflow/core/common_runtime/bfc_allocator.cc:246] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.72GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-02-03 20:12:30.586589: E tensorflow/compiler/tf2tensorrt/utils/trt_logger.cc:43] DefaultLogger Requested amount of GPU memory (4000000000 bytes) could not be allocated. There may not be enough free memory for allocation to succeed.
+2021-02-03 20:12:30.618661: E tensorflow/compiler/tf2tensorrt/utils/trt_logger.cc:43] DefaultLogger /home/jenkins/workspace/TensorRT/helpers/rel-7.1/L1_Nightly_Internal/build/source/rtSafe/resources.h (181) - OutOfMemory Error in GpuMemory: 0
+2021-02-03 20:12:32.129475: E tensorflow/compiler/tf2tensorrt/utils/trt_logger.cc:43] DefaultLogger /home/jenkins/workspace/TensorRT/helpers/rel-7.1/L1_Nightly_Internal/build/source/rtSafe/resources.h (181) - OutOfMemory Error in GpuMemory: 0
+2021-02-03 20:12:32.229787: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:757] TF-TRT Warning: Engine creation for PartitionedCall/TRTEngineOp_0_0 failed. The native segment will be used instead. Reason: Internal: Failed to build TensorRT engine
+2021-02-03 20:12:32.330381: W tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:629] TF-TRT Warning: Engine retrieval for input shapes: [[10000,28,28,1]] failed. Running native segment for PartitionedCall/TRTEngineOp_0_0
+2021-02-03 20:12:33.204970: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-02-03 20:12:43.263814: W tensorflow/core/common_runtime/bfc_allocator.cc:431] Allocator (GPU_0_bfc) ran out of memory trying to allocate 957.03MiB (rounded to 1003520000)requested by op StatefulPartitionedCall/mnist/conv2d/Conv2D
+Current allocation summary follows.
+2021-02-03 20:12:43.265601: I tensorflow/core/common_runtime/bfc_allocator.cc:970] BFCAllocator dump for GPU_0_bfc
+2021-02-03 20:12:43.266580: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (256): 	Total Chunks: 3, Chunks in use: 3. 768B allocated for chunks. 768B in use in bin. 296B client-requested in use in bin.
+2021-02-03 20:12:43.268656: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.269016: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2021-02-03 20:12:43.269633: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (2048): 	Total Chunks: 1, Chunks in use: 1. 3.2KiB allocated for chunks. 3.2KiB in use in bin. 3.1KiB client-requested in use in bin.
+2021-02-03 20:12:43.270208: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (4096): 	Total Chunks: 1, Chunks in use: 1. 4.0KiB allocated for chunks. 4.0KiB in use in bin. 4.0KiB client-requested in use in bin.
+2021-02-03 20:12:43.270774: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.272060: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.272619: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (32768): 	Total Chunks: 1, Chunks in use: 1. 40.0KiB allocated for chunks. 40.0KiB in use in bin. 40.0KiB client-requested in use in bin.
+2021-02-03 20:12:43.273053: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (65536): 	Total Chunks: 1, Chunks in use: 1. 100.0KiB allocated for chunks. 100.0KiB in use in bin. 100.0KiB client-requested in use in bin.
+2021-02-03 20:12:43.273247: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.273472: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.273760: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 874.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.274065: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.274439: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.275010: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.275653: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (8388608): 	Total Chunks: 2, Chunks in use: 1. 16.00MiB allocated for chunks. 8.00MiB in use in bin. 6.12MiB client-requested in use in bin.
+2021-02-03 20:12:43.280611: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.280743: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (33554432): 	Total Chunks: 1, Chunks in use: 1. 32.00MiB allocated for chunks. 32.00MiB in use in bin. 29.91MiB client-requested in use in bin.
+2021-02-03 20:12:43.280850: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.280963: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.281083: I tensorflow/core/common_runtime/bfc_allocator.cc:977] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2021-02-03 20:12:43.281219: I tensorflow/core/common_runtime/bfc_allocator.cc:993] Bin for 957.03MiB was 256.00MiB, Chunk State: 
+2021-02-03 20:12:43.281463: I tensorflow/core/common_runtime/bfc_allocator.cc:1006] Next region of size 1048576
+2021-02-03 20:12:43.281555: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b30000 of size 1280 next 1
+2021-02-03 20:12:43.281629: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b30500 of size 3328 next 20
+2021-02-03 20:12:43.281700: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b31200 of size 256 next 8
+2021-02-03 20:12:43.281771: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b31300 of size 4096 next 9
+2021-02-03 20:12:43.281848: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b32300 of size 256 next 18
+2021-02-03 20:12:43.281930: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b32400 of size 40960 next 5
+2021-02-03 20:12:43.282019: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b3c400 of size 102400 next 6
+2021-02-03 20:12:43.282110: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00b55400 of size 256 next 17
+2021-02-03 20:12:43.282201: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] Free  at f00b55500 of size 895744 next 18446744073709551615
+2021-02-03 20:12:43.282296: I tensorflow/core/common_runtime/bfc_allocator.cc:1006] Next region of size 8388608
+2021-02-03 20:12:43.282397: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f00c30000 of size 8388608 next 18446744073709551615
+2021-02-03 20:12:43.282492: I tensorflow/core/common_runtime/bfc_allocator.cc:1006] Next region of size 8388608
+2021-02-03 20:12:43.282590: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] Free  at f01430000 of size 8388608 next 18446744073709551615
+2021-02-03 20:12:43.282687: I tensorflow/core/common_runtime/bfc_allocator.cc:1006] Next region of size 33554432
+2021-02-03 20:12:43.282787: I tensorflow/core/common_runtime/bfc_allocator.cc:1026] InUse at f01c30000 of size 33554432 next 18446744073709551615
+2021-02-03 20:12:43.282883: I tensorflow/core/common_runtime/bfc_allocator.cc:1031]      Summary of in-use Chunks by size: 
+2021-02-03 20:12:43.282985: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 3 Chunks of size 256 totalling 768B
+2021-02-03 20:12:43.283173: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 1280 totalling 1.2KiB
+2021-02-03 20:12:43.283258: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 3328 totalling 3.2KiB
+2021-02-03 20:12:43.283340: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 4096 totalling 4.0KiB
+2021-02-03 20:12:43.283430: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 40960 totalling 40.0KiB
+2021-02-03 20:12:43.283528: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 102400 totalling 100.0KiB
+2021-02-03 20:12:43.283630: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 8388608 totalling 8.00MiB
+2021-02-03 20:12:43.283739: I tensorflow/core/common_runtime/bfc_allocator.cc:1034] 1 Chunks of size 33554432 totalling 32.00MiB
+2021-02-03 20:12:43.283851: I tensorflow/core/common_runtime/bfc_allocator.cc:1038] Sum Total of in-use chunks: 40.15MiB
+2021-02-03 20:12:43.283958: I tensorflow/core/common_runtime/bfc_allocator.cc:1040] total_region_allocated_bytes_: 51380224 memory_limit_: 320368640 available bytes: 268988416 curr_region_allocation_bytes_: 33554432
+2021-02-03 20:12:43.284420: I tensorflow/core/common_runtime/bfc_allocator.cc:1046] Stats: 
+Limit:                       320368640
+InUse:                        42095872
+MaxInUse:                     42095872
+NumAllocs:                          72
+MaxAllocSize:                 33554432
+Reserved:                            0
+PeakReserved:                        0
+LargestFreeBlock:                    0
+
+2021-02-03 20:12:43.284824: W tensorflow/core/common_runtime/bfc_allocator.cc:439] *_*************xxxx_______________**************************************************************xxxx
+2021-02-03 20:12:43.285538: W tensorflow/core/framework/op_kernel.cc:1767] OP_REQUIRES failed at conv_ops.cc:539 : Resource exhausted: OOM when allocating tensor with shape[10000,32,28,28] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+2021-02-03 20:12:43.286078: W tensorflow/core/framework/op_kernel.cc:1767] OP_REQUIRES failed at trt_engine_op.cc:401 : Resource exhausted: OOM when allocating tensor with shape[10000,32,28,28] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node StatefulPartitionedCall/mnist/conv2d/Conv2D}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+Traceback (most recent call last):
+  File "deploy_trt2.py", line 104, in <module>
+    result=run_inference(graph_func)
+  File "deploy_trt2.py", line 63, in run_inference
+    batch_preds=graph_func(data)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1655, in __call__
+    return self._call_impl(args, kwargs)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/wrap_function.py", line 247, in _call_impl
+    args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1673, in _call_impl
+    return self._call_with_flat_signature(args, kwargs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1722, in _call_with_flat_signature
+    return self._call_flat(args, self.captured_inputs, cancellation_manager)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1924, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 550, in call
+    ctx=ctx)
+  File "/home/john/.local/lib/python3.6/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError:  OOM when allocating tensor with shape[10000,32,28,28] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node StatefulPartitionedCall/mnist/conv2d/Conv2D}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+	 [[PartitionedCall/TRTEngineOp_0_0]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+ [Op:__inference_pruned_838]
+
+Function call stack:
+pruned

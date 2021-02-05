@@ -1,10 +1,10 @@
 Hi
 
-model                     | H/W
---------------------------|----------------------
-**mnist7.tflite**         | fully integer CPU
-**mnist7_edgetpu.tflite** | fully integer TPU
-**mnist8.tflite**         | FP16 CPU
+model                     | H/W                  | size
+--------------------------|----------------------|--------
+**mnist7.tflite**         | fully integer CPU    | 1.57
+**mnist7_edgetpu.tflite** | fully integer TPU    | 1.65
+**mnist8.tflite**         | FP16 CPU             | 3.13
 
 
 ```

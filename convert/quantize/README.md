@@ -2,8 +2,8 @@ Hi
 
 model                     | H/W                  | size
 --------------------------|----------------------|--------
-**mnist7.tflite**         | fully integer CPU    | 1.57 MB
-**mnist7_edgetpu.tflite** | fully integer TPU    | 1.65 MB
+**mnist9.tflite**         | fully integer CPU    | 1.57 MB
+**mnist9_edgetpu.tflite** | fully integer TPU    | 1.65 MB
 **mnist8.tflite**         | FP16 CPU             | 3.13 MB
 
 

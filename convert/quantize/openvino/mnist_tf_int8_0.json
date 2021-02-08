@@ -1,0 +1,18 @@
+{
+    "model": {
+        "model_name": "output_model",
+        "model": "output_model.xml",
+        "weights": "output_model.bin"
+    },
+    "compression": {
+        "algorithms": [
+            {
+                "name": "DefaultQuantization",
+                "params": {
+                    "preset": "mixed",
+                    "stat_subset_size": 300
+                }
+            }
+        ]
+    }
+}

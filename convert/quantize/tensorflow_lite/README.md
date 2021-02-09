@@ -48,3 +48,5 @@ CONV_2D                        2          Mapped to Edge TPU
 SOFTMAX                        1          Mapped to Edge TPU
 
 ```
+
+https://www.tensorflow.org/lite/performance/post_training_quantization

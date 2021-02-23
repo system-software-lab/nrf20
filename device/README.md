@@ -110,3 +110,4 @@ Status BaseGPUDeviceFactory::CreateGPUDevice(
 }
 ```
 ![](https://github.com/pinguin-der-bellt/ssl-2020/blob/main/nvidia_hardware_support.PNG?raw=true)
+https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html

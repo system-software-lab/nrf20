@@ -109,3 +109,4 @@ Status BaseGPUDeviceFactory::CreateGPUDevice(
   return Status::OK();
 }
 ```
+![](https://github.com/pinguin-der-bellt/ssl-2020/blob/main/nvidia_hardware_support.PNG?raw=true)

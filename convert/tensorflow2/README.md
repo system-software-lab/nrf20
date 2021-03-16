@@ -19,3 +19,13 @@
 - mnist_main3q.py
 
 	mnist 모델 만드는 코드에서 양자화 과정 포함시킨 코드
+
+```
+python3 mnist_main.py \
+  --model_dir=$MODEL_DIR \
+  --data_dir=$DATA_DIR \
+  --train_epochs=10 \
+  --distribution_strategy=one_device \
+  --num_gpus=$NUM_GPUS \
+  --download	
+```

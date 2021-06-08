@@ -15,7 +15,7 @@ https://community.intel.com/t5/Intel-Distribution-of-OpenVINO/DLDT-install-on-Ub
 
 x86-64-linux -> aarch64-linux 
 
-
+```
 git clone https://github.com/openvinotoolkit/openvino.git
 cd openvino
 git checkout 2020.4
@@ -41,4 +41,4 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6 \
 ..
 
-
+```

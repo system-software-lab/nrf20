@@ -42,3 +42,24 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 ..
 
 ```
+
+```
+   14  wget http://software.intel.com/content/dam/develop/external/us/en/documents/Setup%20Additional%20Files%20Package.tar.gz
+   15  ls
+   16  tar xvzf Setup\ Additional\ Files\ Package.tar.gz
+   
+      93  sudo cp ~/OpenVINO/97-myriad-usbboot.rules_.txt /etc/udev/rules.d/97-myriad-usbboot.rules
+   94  cd /etc/udev/rules.d/
+   95  ls
+   96  cd ~
+   97  sudo udevadm control --reload-rules
+   98  sudo udevadm trigger 
+   99  sudo ldconfig
+  100  sudo usermod -a -G users "$(whoami)"
+  101  echo $whoami
+  102  echo $(whoami)
+  103  sudo apt install libgflags-dev
+
+
+
+```

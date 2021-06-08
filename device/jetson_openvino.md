@@ -16,5 +16,29 @@ https://community.intel.com/t5/Intel-Distribution-of-OpenVINO/DLDT-install-on-Ub
 x86-64-linux -> aarch64-linux 
 
 
+git clone https://github.com/openvinotoolkit/openvino.git
+cd openvino
+git checkout 2020.4
+cd inference-engine
+git submodule update --init --recursive
+cd ../openvino
+sh ./install_dependencies.sh
+cd inference-engine/ie_bridges/python
+pip3 install -r requirements.txt
+cd ../../../ && mkdir build && cd build
+
+cmake -DCMAKE_BUILD_TYPE=Release \
+-DENABLE_MKL_DNN=OFF \
+-DENABLE_CLDNN=OFF \
+-DENABLE_GNA=OFF \
+-DENABLE_SSE42=OFF \
+-DTHREADING=SEQ \
+-DENABLE_SAMPLES=ON \
+-DENABLE_OPENCV=OFF \
+-DENABLE_PYTHON=ON \
+-DPYTHON_EXECUTABLE=/usr/bin/python3.6 \
+-DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.6m.so \
+-DPYTHON_INCLUDE_DIR=/usr/include/python3.6 \
+..
 
 

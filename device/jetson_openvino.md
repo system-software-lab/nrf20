@@ -11,4 +11,10 @@ git submodule update --init --recursive -> git: 모든 파일을 가져올 수 �
 libpython3.6m.so.1.0 이 무슨 x86-64/ 파일에 들어있어야 한다고 나오는데
 /usr/local/lib 인지 어딘지에서 저 파일을 찾아서 위 디렉토리 이름으로 만들어 넣어주면 해결됨.
 
+https://community.intel.com/t5/Intel-Distribution-of-OpenVINO/DLDT-install-on-Ubuntu-18-04-on-RPi4-Cython-File-error/td-p/1198301?profile.language=ko
+
+x86-64-linux -> aarch64-linux 
+
+
+
 

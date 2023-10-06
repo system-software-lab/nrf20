@@ -1,0 +1,14 @@
+land2@land2-desktop:~/measure/accuracy$ python3 run7.py ../model/incept.xml
+(4992, 160, 160, 3)
+(4992, 160, 160, 3)
+[1, 160, 160, 3]
+32
+total_time:  98.02093529701233
+4992
+thursday:  -8.20312
+cat, pos:  142 neg:  2353 
+
+dog, pos:  2355 neg:  139 
+
+acc:  94.3676087392263
+

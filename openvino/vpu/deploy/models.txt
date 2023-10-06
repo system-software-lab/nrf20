@@ -1,0 +1,4 @@
+../model/incept.xml
+../model/mobv1.xml
+../model/mobv2.xml
+../model/resnet.xml

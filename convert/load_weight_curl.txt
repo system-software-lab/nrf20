@@ -1,0 +1,4 @@
+curl.exe https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160.h5 -o C:\\Users\\user\\Desktop\\tf_mobile_2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160.h5 
+
+curl.exe https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224.h5 -o C:\\Users\\user\\Desktop\\tf_mobile_2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224.h5 
+
